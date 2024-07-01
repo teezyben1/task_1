@@ -7,10 +7,10 @@ app.get('/', (req, res) => {
     const ipAddress = req.ip
     
 
-    const locationInfo = ipInfo.getIPInfo(ipAddress).then(data => {
-     
+ipInfo.getIPInfo(ipAddress).then(data => {
+    const locationInfo = data
+    res.send(`Hello World! ${ipAddress} ${locationInfo}`)
 })
 .catch(err => console.log(err));
-    res.send(`Hello World! ${ipAddress} ${locationInfo}`)
 })
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
