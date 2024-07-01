@@ -10,6 +10,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@sasmeee/ip-locator": "^1.1.8",
     "express": "^4.19.2",
     "ip-info-finder": "^3.0.3"
   }
